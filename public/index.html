@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature and Humidity</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1 class="title">Temperature and Humidity</h1>
+    <h2 class="city">Suchiapa, Chiapas</h2>
+
+    <div class="box-containers">
+        <div class="temperature box">
+            <h2 id="tem-tit">Temperature</h2>
+            <span class="data" id="tem">Getting current data...</span>
+        </div>
+        <div class="humidity box">
+            <h2 id="hum-tit">Humidity</h2>
+            <span class="data" id="hum">Getting current data..</span>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script type="module" src="/script.js"></script>
+
+</html>

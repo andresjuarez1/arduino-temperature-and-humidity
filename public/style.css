@@ -1,0 +1,79 @@
+*{
+    font-family: system-ui;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+    background-color: rgb(46, 46, 46);
+    /* background-image: url(img/clear-sky-1363026.jpg); */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.city{
+    font-size: 1em;
+    color: rgb(173, 173, 173);
+}
+
+.box-containers{
+    display: flex;
+}
+
+.box{
+    cursor: default; 
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.29);
+    border-radius: 6px;
+    margin: 20px 13px;
+    padding: 32px 32px;
+    text-align: center;
+}
+
+.humidity:hover{
+    color: white;
+    background-color: rgb(71, 71, 255);
+    transition: all 200ms;
+}
+
+.temperature:hover{
+    color: white;
+    background-color: rgb(255, 49, 49);
+    transition: all 200ms;
+}
+
+.info{
+    font-size: 31px;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+.title-box{
+    font-weight: normal;
+    font-size: 17px;
+    transition: all 250ms;
+}
+
+@media (max-width:412px){
+    .title{
+        font-size: 25px;
+    }
+
+    .box{
+        padding: 25px 20px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .data{
+        font-size: 15px;
+    }
+    
+}
